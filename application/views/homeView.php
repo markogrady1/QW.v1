@@ -10,33 +10,34 @@
 
 </head>
 <body>
-<div class="page-wrap">
-<header class="header">
-	<span class="logo-wrap">LOGO</span>  
+	<header class="header">
+	<span class="logo-wrap">Grady's Quiz Nite</span>  
 </header>
+<div class="page-wrap">
+
 
 <div class="welcome-message">Welcome to grady's quiz nite</div>
 	<div class="row">
 		<div class="c2 first-block"></div>
 
-		<a href="quiz/movie">
+		<a href="quiz/start?cat=movie">
 			<div class="c2 left-block">
 				<span class="block-icon"><i class="fa fa-film"></i></span>
-				<a href="quiz/movie"><span class="block-title movie">Movie Quiz</span></a>  
+				<a href="quiz/start?cat=movie"><span class="block-title movie">Movie Quiz</span></a>  
 			</div>
 		</a>
 
-		<a href="quiz/sport">
+		<a href="quiz/start?cat=sport">
 			<div class="c2 mid-block">
 				<span class="block-icon"><i class="fa fa-futbol-o"></i></span>
-				<a href="quiz/sport"><span class="block-title sport">Sports Quiz</span></a>  
+				<a href="quiz/start?cat=sport"><span class="block-title sport">Sports Quiz</span></a>  
 			</div>
 		</a>
 
-		<a href="quiz/Space">
+		<a href="quiz/start?cat=space">
 			<div class="c2 right-block">
 				<span class="block-icon"><i class="fa fa-rocket"></i></span>
-				<a href="quiz/space"><span class="block-title rocket">Space Quiz</span></a>  
+				<a href="quiz/start?cat=space"><span class="block-title rocket">Space Quiz</span></a>  
 			</div>
 		</a>
 		<div class="c2"></div>

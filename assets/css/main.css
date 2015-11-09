@@ -1,15 +1,35 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Courgette);
 
+body {
+	position: relative;
 }
 
 header {
-	height: 50px;
+	padding: 14px 0 0 50px;
+	height: 38px;
 	background-color: #272822;
 }
 
-.logo-wrap {
+.header-quiz {
+	padding: 5px 0 0 50px;
+	height: 47px;
+	background-color: #272822;
+}
+
+span.logo-wrap {
+
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Courgette', cursive;
+	font-size: 30px;
+	/*padding: 10px 0 0 50px;*/
+}
+
+span.logo-wrap-quiz {
+
+	color: #fff;
+	font-family: 'Courgette', cursive;
+	font-size: 30px;
+	/*padding: 10px 0 0 50px;*/
 }
 
 .page-wrap {
@@ -59,11 +79,123 @@ header {
 }
 
 
+.details-overlay {
+	width: 70%;
+	height: 70%;
+	background-color: #323232;
+	position: absolute;
+	opacity: 1;
+	z-index: 2;
+	top: 100px;
+	left: 200px;
+	border-radius: 20px;
+	border: 9px solid #272822;
+	
+}
+.details-underlay {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	opacity: 0.5;
+}
 
 
+.answer-status {
+	font-size: 8em;
+	position: absolute;
+	top: 150;
+	right: 400;
+	font-family: 'Courgette', cursive;
+	 /*-webkit-text-fill-color: white;  Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #777;
+}
 
 
+img.result-status {
+	position: absolute;
+	width:150px;
+	height:150px;
+	top: 150px;
+	right: 200px;
+	opacity: 0.9
+}
 
+
+.form-wrap {
+	width: 60%;
+	height: 60%;
+	position: absolute;
+	top:150;
+	left:320;
+	/*background-color: red;*/
+}
+
+.answer-btn1, .answer-btn2 {
+	position: absolute;
+	top: 250;
+}
+
+.answer-btn3, .answer-btn4 {
+	position: absolute;
+	top: 150;
+}
+
+.answer-btn4, .answer-btn2 {
+	/*position: absolute;*/
+	right: 500;
+}
+
+.answer-btn1, .answer-btn3 {
+	/*position: absolute;*/
+	right: 150;
+}
+
+
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+	width: 200px;
+}
+
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+	font-family:arial, helvetica, sans-serif; 
+	font-size: 1.4em;
+	height: 50px;
+	width: 300px;
+	border-radius: 7px;
+	background-color: #3093C7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093C7), to(#1C5A85));
+ background-image: -webkit-linear-gradient(top, #3093C7, #1C5A85);
+ background-image: -moz-linear-gradient(top, #3093C7, #1C5A85);
+ background-image: -ms-linear-gradient(top, #3093C7, #1C5A85);
+ background-image: -o-linear-gradient(top, #3093C7, #1C5A85);
+ background-image: linear-gradient(to bottom, #3093C7, #1C5A85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093C7, endColorstr=#1C5A85);
+ box-shadow: #878787 0px 2px 2px
+}
+
+
+.answer-btn1:hover, .answer-btn2:hover, .answer-btn3:hover, .answer-btn4:hover {
+
+	background-color: #3093C7; background-image: -webkit-gradient(linear, left top, left bottom, from(#1C5A85), to(#3093C7));
+ background-image: -webkit-linear-gradient(top,#1C5A85 , #3093C7);
+ background-image: -moz-linear-gradient(top,#1C5A85 , #3093C7);
+ background-image: -ms-linear-gradient(top,#1C5A85 , #3093C7);
+ background-image: -o-linear-gradient(top,#1C5A85 , #3093C7);
+ background-image: linear-gradient(to bottom,#1C5A85,  #3093C7);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1C5A85, endColorstr=#3093C7);
+ box-shadow: #878787 0px 2px 2px
+}
+
+.question-wrap {
+	border-radius: 8px;
+	padding-top:40px;
+	text-align: center;
+	height: 100px;
+	width: 90%;
+	background-color: #323232;
+	font-size: 1.5em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ddd;
+	box-shadow: #878787 0px 2px 2px
+}
 
 
 

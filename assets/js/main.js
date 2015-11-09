@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	setHovers();
 
+	
 /**
  * This function needs to refactored because it is repeating an awful lot
  * one function passing in class color and event should suffice
@@ -128,3 +129,23 @@ $blockIconr.on('mouseover', function() {
 
 	}
 });
+
+
+function popUp() {
+$underLay = $('.details-underlay');
+$overLay = $('.details-overlay');
+console.log($underLay);
+
+
+	setTimeout(function(){
+	
+		$underLay.fadeOut('slow', function() {
+			$underLay.remove();
+		})
+
+		$overLay.fadeOut('slow', function() {
+			$overLay.remove();
+		})
+	},1500);
+		
+	}
