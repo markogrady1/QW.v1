@@ -1,0 +1,82 @@
+body {
+
+}
+
+header {
+	height: 50px;
+	background-color: #272822;
+}
+
+.logo-wrap {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.page-wrap {
+	
+}
+
+
+.welcome-message {
+	padding: 30px 30%;
+	font-size: 3em;
+}
+.first-block {
+	width: 15%;
+}
+
+.right-block, .mid-block, .left-block {
+	border-radius: 3px;
+	position: relative;
+	height: 200px;
+	background-color: #323232;
+	margin: 30px 70px 0 0;
+}
+
+
+.block-icon {
+	position: absolute;
+	font-size: 6em;
+	color: #fff;
+	left: 100px;
+    top: 50px;
+}
+.block-title {
+	position: absolute;
+	font-size: 2em;
+	color: #fff;
+	font-size: 1.4em;
+    max-width: 270px;
+    letter-spacing: -.5px;
+    line-height: 1.2em;
+    font-weight: 700;
+    left: 95px;
+    top: 160px;
+}
+
+.block-icon:hover, .block-title:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,848 @@
+/*label:before{
+     content: "\a";
+    white-space: pre;
+}*/
+h2.live {
+    color: #444;
+}
+
+.check {
+	font-size: 1.3em;
+}
+
+.h1-g {
+    color: #444;
+}
+h1{
+    color: #444;
+}
+
+body {
+   -webkit-font-smoothing:antialiased!important;
+   font-smoothing:antialiased!important;
+    text-shadow:1px 1px 1px rgba(0,0,0,.004);
+    margin: 0;
+    padding: 0;
+}
+a{
+	color: #428BCA;
+text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+/*
+|====================================
+|-----------------------------------
+| 		Error/Confirmation messages
+|----------------------------------
+|====================================
+*/
+.form-error-msg {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 46%;
+    color: #f88c00;
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+    color: #A94442;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+}
+
+.form-confirm-msg {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 46%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #a9a9a9;
+
+    color: #8A2BE2;
+    background-color: #DFF0D8;
+    color: #3C763D;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+.form-error-msg {
+    width: 66%;
+    margin: 10px auto;
+
+}
+
+.form-confirm-msg {
+    width: 66%;
+    margin: 10px auto;
+}
+}
+
+/*
+|====================================
+|-----------------------------------
+| Normalise import.
+|----------------------------------
+|====================================
+*/
+input, select {
+    outline: 0;
+    border: 0;
+
+}
+
+.section-title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 1.2em;
+}
+
+/*
+|====================================
+|-----------------------------------
+| 	Force newlines
+|----------------------------------
+|====================================
+*/
+.n1-third-column {
+	color: #333;
+}
+.nl:after {
+
+    content: "\a";
+    white-space: pre;
+}
+
+.nl2:after {
+
+    content: '\a\a';
+    white-space: pre;
+}
+/*
+    |====================================
+    |-----------------------------------
+    |   Responsive grid layout.
+    |----------------------------------
+    |====================================
+    */
+.column-3 {
+	color: #444;
+}
+.row{
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 900px) {
+    .c1 {
+        width: 10%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 1px;
+    }
+
+    .c2 {
+        width: 20%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 1px;
+    }
+
+    .c3 {
+        width: 25%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+
+    .c4 {
+        width: 33.33%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+
+    .c6 {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+
+    .c8 {
+        width: 60%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+
+    .c10 {
+        width: 80%;
+        float: left;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: box-content;
+        display: block;
+        position: relative;
+        padding: 5px;
+    }
+}
+
+/*
+|====================================
+|-----------------------------------
+| 	Form styles.
+|----------------------------------
+|====================================
+*/
+#name,#username,#email,#password,#password_confirm{
+    width:400px;
+}
+@media (max-width:600px){
+
+#name,#username,#email,#password,#password_confirm{
+    width:200px;
+}
+
+}
+.form-in {
+    color:#444;
+    border: 3px solid #bbb;
+    line-height: 1.9em;
+    width: 50%;
+    border-radius: 5px;
+    margin:7px 0 5px 0;
+    padding-left:5px;
+    font-size: 1em
+}
+
+input[type='password'] {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: #555;
+}
+
+input[type='button'], [type='submit'], button {
+    padding: 7px 25px;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #428BCA;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+input[type='button']:hover, [type='submit']:hover, button:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+
+
+}
+
+label {
+     padding-left:10px;
+    color: #888;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+.form-in {
+    width: 70%;
+    margin: 10px auto 7px 20px;
+}
+input[type='submit'],button{
+    margin: 3px auto 7px 20px;
+}
+label {
+    margin: 0 auto 7px 20px;
+ }
+}
+/*
+|====================================
+|-----------------------------------
+| Generated form style
+|----------------------------------
+|====================================
+*/
+input#remember{
+    padding-left:10px;
+    margin: 0 0 10px 10px;
+}
+/*
+|====================================
+|-----------------------------------
+| Custom button styles.
+|----------------------------------
+|====================================
+*/
+
+button.btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 7px 25px;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    width: 120px;
+    background-color: #428BCA;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+}
+.btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 7px 25px;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    width: 90px;
+    background-color: #428BCA;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+
+.btn1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px 25px;
+    color: #FFF;
+    background-color: #428BCA;
+}
+.btn1:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    width: 100px;
+    padding: 8px 25px;
+      color: #FFF;
+     background-color: #428BCA;
+}
+.btn2:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #428BCA;  
+    color: #FFF;
+    width: 120px;
+    padding: 7px 25px;
+    
+}
+.btn3:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #428BCA;  
+    color: #FFF;
+    width: 145px;
+    padding: 10px 25px;
+}
+.btn4:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn5 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #428BCA;  
+    color: #FFF;
+    width: 200px;
+    padding: 12px 25px;
+}
+.btn5:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #428BCA;  
+    color: #FFF;
+    width: 230px;
+    padding: 14px 25px;
+}
+.btn6:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.btn7 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #357EBD;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #428BCA;  
+    color: #FFF;
+    width: 40%;
+}
+.btn7:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3276B1;
+    border-color: #285E8E;
+}
+.pastel-btn-green {
+    background-color: #DFF0D8;
+    border: 1px solid #a9a9a9;
+    color: #3C769D;
+}
+
+.pastel-btn-red {
+    background-color: #F2DEDE;
+    border: 1px solid #A9A9A9;
+    color: #A94492;
+}
+
+/*
+|====================================
+|-----------------------------------
+| Radio buttons and checkbox styles
+|----------------------------------
+|====================================
+*/
+.whl-chk-wrp {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px;
+    line-height: .6em;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    display: inline-block;
+}
+
+.whl-radio-wrp {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px;
+    line-height: .6em;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    display: inline-block;
+}
+
+.check-wrp {
+    margin: 5px;
+}
+
+.check-label {
+    padding: 7px 20px 5px 5px;
+    border-left: 1px solid #a9a9a9;
+    color: #555;
+}
+
+.radio-wrp {
+    margin: 5px;
+}
+
+.radio-label {
+    padding: 7px 20px 5px 5px;
+    border-left: 1px solid #a9a9a9;
+    color: #555;
+}
+@media (max-width:600px){
+.whl-chk-wrp {
+    margin-left:20px;
+}
+.whl-radio-wrp {
+    margin-left:20px;
+}
+}
+/*
+|====================================
+|-----------------------------------
+| Drop-box (select) styles
+|----------------------------------
+|====================================
+*/
+.drop {
+    line-height: 1.3;
+    border: 2px solid #bbb;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-weight: bolder;
+    color: #777;
+}
+
+/*
+|====================================
+|-----------------------------------
+| Buttton warning styles
+|----------------------------------
+|====================================
+*/
+.btn-green {
+    width:90px;
+    border: 1px solid #4CAE4C;
+    background-color: #5CB85C;
+   
+}
+
+.btn-green:hover {
+    background-color: #5CB830;
+    border: 1px solid #5CB830;
+}
+
+.btn-amber:hover {
+    background-color: #F0AD30;
+    border: 1px solid #F0AD30;
+}
+
+.btn-red:hover {
+    background-color: #D95330;
+    border: 1px solid #D95330;
+}
+
+.btn-amber {
+     width:90px;
+    background-color: #F0AD4E;
+    border: 1px solid #EEA236;
+}
+
+.btn-red {
+     width:90px;
+    background-color: #D9534F;
+    border: 1px solid #D43F3A;
+}
+
+/*
+|====================================
+|-----------------------------------
+| Responsive menu styles for desktop
+|----------------------------------
+|====================================
+*/
+@media (min-width: 601px) {
+    #menu-list {
+        list-style: none;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    #menu-list li {
+        padding-left: 10px;
+        float: left;
+    }
+
+    #bars {
+        display: none;
+    }
+    #menu-list:after{
+       content:" ";
+       display:block;
+       clear:both;
+       line-height:0; 
+     }
+}
+
+
+/*
+|====================================
+|-----------------------------------
+| Responsive menu styles for mobile
+|----------------------------------
+|====================================
+*/
+@media (max-width: 600px) {
+
+    #menu-list {
+        -webkit-transition: display 2s ease;
+        -moz-transition: display 2s ease;
+        transition: display 2s ease;
+        display: none;
+        list-style: none;
+        background-color: #F7F7F7;
+        border: 1px solid #a9a9a9;
+        box-shadow: 5px 5px 5px #bdbdbd;
+        
+    }
+
+    ul#menu-list {
+        padding-left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    #menu-list li {
+        text-align: center;
+        color: #555;
+        padding-left: 0;
+        margin-left: 0;
+        display: block;
+        padding:10px 15px;
+
+    }
+    #menu-list li:hover{
+        
+        color: #555;
+        cursor:pointer;
+		background-color:#EDEDED;
+    }
+    #menu-list a {
+        
+        text-decoration: none;
+    }
+
+    #menu {
+        padding: 0 0 0 30px;
+    }
+
+    /*
+    |====================================
+    |-----------------------------------
+    | Menu bars
+    |----------------------------------
+    |====================================
+    */
+    #bars {
+
+        width: 24px;
+        height: 4px;
+        margin: 10px 0;
+        background: #EC008C;
+        position: relative;
+    }
+
+    #bars::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background: #EC008C;
+        position: absolute;
+        z-index: -1;
+        top: 8px;
+    }
+
+    #bars::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background: #EC008C;
+        position: absolute;
+        z-index: -1;
+        top: -8px;
+    }
+
+    #bars:hover {
+        cursor: pointer;
+
+    }
+
+    #bars-wrp {
+        margin-left: 20px;
+        padding: 1px;
+        width: 24px;
+        opacity: .8;
+    }
+
+    #bars-wrp:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    #menu {
+        margin: 0;
+        padding: 0;
+    }
+}
+/*
+|=================================================
+|-------------------------------------------------
+| Animation for the mobile sized menu list
+|-------------------------------------------------
+|=================================================
+*/
+
+.menu-anim {
+    -webkit-animation-name: flyIn;
+    -moz-animation-name: flyIn;
+    -o-animation-name: flyIn;
+    -ms-animation-name: flyIn;
+    animation-name: flyIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: .5s;
+    -moz-animation-fill-mode: both;
+    -ms-animation-duration: .5s;
+    -ms-animation-fill-mode: both;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flyIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.0);
+        transform: scale(0.0)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(.05);
+        transform: scale(.05)
+    }
+    70% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.0);
+        -ms-transform: scale(0.0);
+        transform: scale(0.0)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(.05);
+        -ms-transform: scale(.05);
+        transform: scale(.05)
+    }
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+/*
+|=================================================
+|-------------------------------------------------
+| Responsive menu styles for look and feel class
+|-------------------------------------------------
+|=================================================
+*/
+.look-feel{
+	background-color:#F7F7F7;
+	padding:0;
+	border-radius: 4px ;
+	border:1px solid #a9a9a9;
+	margin:0;
+	color:#555;
+}
+.look-feel li{
+	margin:0;
+	background-color: #F7F7F7;	
+	border-right:1px solid #a9a9a9;
+	padding-left:20px;
+	padding-right:20px;
+	padding:10px 15px;
+}
+.look-feel a li{
+	color:#555;
+	text-decoration: none;
+}
+.look-feel a{
+	color:#555;
+	text-decoration: none;
+}
+
+.look-feel li:hover{
+	cursor:pointer;
+	background-color:#EDEDED;
+	
+}
+@media (max-width:601px){
+	.look-feel a {
+	text-decoration: none;
+}
+}
+/*
+|=================================================
+|-------------------------------------------------
+| Text styling
+|-------------------------------------------------
+|=================================================
+*/
+.highlight{
+    background-color: #eee;
+    border:1px solid #aaa;
+    border-radius:3px;
+    padding:0.01em 0.08em;
+}
+

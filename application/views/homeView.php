@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>QUIZ PAGE</title>
+	
+		<link href="<?php echo base_url('/assets/css/grady.css');?>" rel="stylesheet">
+		<link href="<?php echo base_url('/assets/css/bootstrap.css');?>" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js" ></script>		
+		<link href="<?php echo base_url('/assets/css/main.css');?>" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="page-wrap">
+<header class="header">
+	<span class="logo-wrap">LOGO</span>  
+</header>
+
+<div class="welcome-message">Welcome to grady's quiz nite</div>
+	<div class="row">
+		<div class="c2 first-block"></div>
+
+		<a href="quiz/movie">
+			<div class="c2 left-block">
+				<span class="block-icon"><i class="fa fa-film"></i></span>
+				<a href="quiz/movie"><span class="block-title movie">Movie Quiz</span></a>  
+			</div>
+		</a>
+
+		<a href="quiz/sport">
+			<div class="c2 mid-block">
+				<span class="block-icon"><i class="fa fa-futbol-o"></i></span>
+				<a href="quiz/sport"><span class="block-title sport">Sports Quiz</span></a>  
+			</div>
+		</a>
+
+		<a href="quiz/Space">
+			<div class="c2 right-block">
+				<span class="block-icon"><i class="fa fa-rocket"></i></span>
+				<a href="quiz/space"><span class="block-title rocket">Space Quiz</span></a>  
+			</div>
+		</a>
+		<div class="c2"></div>
+	</div>
+	
+	</div>
+ <script src="<?php echo base_url('/assets/js/main.js');?>"></script>
+</body>
+</html>
