@@ -7,8 +7,9 @@
 		<link href="<?php echo base_url('/assets/css/main.css');?>" rel="stylesheet">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
  <script src='<?php echo base_url('/assets/js/main.js');?>'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="site">
 	<header class="header-quiz">
 	<span class="logo-wrap">Grady's Quiz Nite</span>  
 </header>
@@ -75,9 +76,22 @@ shuffle($newArray);
  </form>
 </div>
 </div>
-<div class="footer">
-	<div class="copy">
-	<div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a></div></div><div class="socials">s</div>
-</div>
+    <div class="footer">
+        <div class="copy">
+            <div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a>
+            </div></div>
+
+
+        <div class="socsq">
+
+            <ul class="soc-listq">
+                <li class="itemq"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                <li class="itemq"><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                <li class="itemq"><a href=""><i class="fa fa-github-square"></i></a></li>
+                <li class="itemq"><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="<?php echo base_url('/assets/js/main.js');?>"></script>
 </body>
 </html>

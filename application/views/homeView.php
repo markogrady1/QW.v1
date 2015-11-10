@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body class="site">
 	<header class="header">
 	<span class="logo-wrap">Grady's Quiz Nite</span>  
 </header>
@@ -46,16 +46,17 @@
 	</div>
 	<div class="footer">
 	<div class="copy">
-	<div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a></div></div>
+	<div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a>
+        </div></div>
 
 
 	<div class="socs">
 
-<ul class"soc-list">
-	<li><i class="fa fa-facebook-square"></i></li>
-	<li><i class="fa fa-facebook-square"></i></li>
-	<li><i class="fa fa-facebook-square">hfekwhgksdnajj</i></li>
-	<li><i class="fa fa-facebook-square"></i></li>
+<ul class="soc-list">
+	<li class="item"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+	<li class="item"><a href=""><i class="fa fa-twitter-square"></i></a></li>
+	<li class="item"><a href=""><i class="fa fa-github-square"></i></a></li>
+	<li class="item"><a href=""><i class="fa fa-google-plus-square"></i></a></li>
 </ul>
 </div>
 </div>
