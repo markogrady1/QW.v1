@@ -8,7 +8,34 @@ header {
 	padding: 14px 0 0 50px;
 	height: 38px;
 	background-color: #272822;
+	/*background-image: linear-gradient(135deg,#272822,#272822 40%,#ccc);*/
 }
+
+a {
+	color: #2678A7;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.quiz-page-wrap, .page-wrap {
+	/*height: 90%;*/
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+  margin-top: 10px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 142px; 
+}
+
 
 .header-quiz {
 	padding: 5px 0 0 50px;
@@ -38,8 +65,12 @@ span.logo-wrap-quiz {
 
 
 .welcome-message {
-	padding: 30px 30%;
+	width: inherit;
+	margin: 30px auto;
+	text-align: center;
+	/*padding: 30px 30%;*/
 	font-size: 3em;
+
 }
 .first-block {
 	width: 15%;
@@ -58,7 +89,7 @@ span.logo-wrap-quiz {
 	position: absolute;
 	font-size: 6em;
 	color: #fff;
-	left: 100px;
+	left: 33%;
     top: 50px;
 }
 .block-title {
@@ -70,7 +101,7 @@ span.logo-wrap-quiz {
     letter-spacing: -.5px;
     line-height: 1.2em;
     font-weight: 700;
-    left: 95px;
+    left: 33%;
     top: 160px;
 }
 
@@ -81,7 +112,7 @@ span.logo-wrap-quiz {
 
 .details-overlay {
 	width: 70%;
-	height: 70%;
+	height: 50%;
 	background-color: #323232;
 	position: absolute;
 	opacity: 1;
@@ -94,9 +125,10 @@ span.logo-wrap-quiz {
 }
 .details-underlay {
 	width: 100%;
-	height: 100%;
+	height: 104%;
 	background-color: #000;
 	position: absolute;
+	margin-top:-200px;
 	opacity: 0.5;
 }
 
@@ -104,7 +136,7 @@ span.logo-wrap-quiz {
 .answer-status {
 	font-size: 8em;
 	position: absolute;
-	top: 150;
+	top: 100;
 	right: 400;
 	font-family: 'Courgette', cursive;
 	 /*-webkit-text-fill-color: white;  Will override color (regardless of order) */
@@ -117,7 +149,7 @@ img.result-status {
 	position: absolute;
 	width:150px;
 	height:150px;
-	top: 150px;
+	top: 100px;
 	right: 200px;
 	opacity: 0.9
 }
@@ -126,35 +158,106 @@ img.result-status {
 .form-wrap {
 	width: 60%;
 	height: 60%;
-	position: absolute;
-	top:150;
-	left:320;
+	margin: 0 auto;
+
 	/*background-color: red;*/
 }
 
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+	margin: 20px 0 ;
+	width: 200px;
+}
 .answer-btn1, .answer-btn2 {
-	position: absolute;
-	top: 250;
-}
+	/*position: absolute;
+	top: 250;*/
 
-.answer-btn3, .answer-btn4 {
-	position: absolute;
-	top: 150;
 }
-
-.answer-btn4, .answer-btn2 {
-	/*position: absolute;*/
-	right: 500;
+@media only screen and (min-width: 1287px) {
+   .answer-btn4, .answer-btn2 {
+	/*left: 5%;*/
+	float:right;
+	margin-right:10%;
 }
 
 .answer-btn1, .answer-btn3 {
-	/*position: absolute;*/
-	right: 150;
+	/*right: 10%;*/
+	float: left;
+	margin-left:10%;
 }
 
 
-.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
-	width: 200px;
+
+.answer-btn3, .answer-btn4 {
+	/*position: absolute;
+	top: 150;*/
+}
+
+.answer-btn4, .answer-btn2 {
+	/*left: 5%;*/
+	float:right;
+	margin-right:10%;
+}
+
+.answer-btn1, .answer-btn3 {
+	/*right: 10%;*/
+	float: left;
+	margin-left:10%;
+}
+}
+
+@media only screen and (max-width: 1287px) {
+   .answer-btn4, .answer-btn2 {
+	/*left: 5%;*/
+	float:right;
+	margin-right:5%;
+}
+
+.answer-btn1, .answer-btn3 {
+	/*right: 10%;*/
+	float: left;
+	margin-left:5%;
+}
+
+
+
+.answer-btn3, .answer-btn4 {
+	/*position: absolute;
+	top: 150;*/
+}
+
+.answer-btn4, .answer-btn2 {
+	/*left: 5%;*/
+	float:right;
+	margin-right:5%;
+}
+
+.answer-btn1, .answer-btn3 {
+	/*right: 10%;*/
+	float: left;
+	margin-left:5%;
+}
+
+.answer-status {
+	font-size: 8em;
+	position: absolute;
+	top: 150;
+	right: 300;
+	font-family: 'Courgette', cursive;
+	 /*-webkit-text-fill-color: white;  Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #777;
+}
+
+
+img.result-status {
+	position: absolute;
+	width:150px;
+	height:150px;
+	top: 150px;
+	right: 100px;
+	/*opacity: 0.9*/
+}
+
 }
 
 .answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
@@ -184,18 +287,66 @@ img.result-status {
  box-shadow: #878787 0px 2px 2px
 }
 
+.btn-wrap {
+	width: inherit; 
+	height: 10px;
+	margin:0 auto;
+}
 .question-wrap {
 	border-radius: 8px;
-	padding-top:40px;
+	padding:40px 10% 0 10%;
 	text-align: center;
 	height: 100px;
-	width: 90%;
+	width: inherit;
 	background-color: #323232;
 	font-size: 1.5em;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #ddd;
-	box-shadow: #878787 0px 2px 2px
+	box-shadow: #878787 0px 2px 2px;
+	margin: 0 auto;
 }
+
+.feedback {
+	width:60%;
+	height: 100px;
+	background-color: #C5C5C5;
+	margin: 0 auto 10px auto;
+	border-radius: 10px;
+}
+
+.footer, body:after {
+	/*background-image: linear-gradient(135deg,#ddd,#272822 40%,#272822);*/
+	float: bottom;
+	height: 80px;
+	width: 100%;
+	background-color: #272822;
+}
+
+.copy-right {
+	font-family: 'Source Sans Pro',sans-serif;
+	font-size: 15px;
+	width: 300px;
+	color: #E2E1E7;
+	padding: 20px 0 0 40px;
+}
+
+.made-by {
+	padding: 0 0 0 70px;
+	font-size: 0.8em;
+	font-family: 'Source Sans Pro',sans-serif;
+	color: #75715E;
+}
+
+.socs {
+	color:#000;
+	width:200px;
+	height:200px;
+}
+
+.socs li {
+	list-style: none;
+}
+
 
 
 

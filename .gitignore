@@ -5,3 +5,4 @@ application/cache/*
 application/logs/*
 /system/*
 .*.swp
+.idea

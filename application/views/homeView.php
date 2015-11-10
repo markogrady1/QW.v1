@@ -44,6 +44,21 @@
 	</div>
 	
 	</div>
+	<div class="footer">
+	<div class="copy">
+	<div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a></div></div>
+
+
+	<div class="socs">
+
+<ul class"soc-list">
+	<li><i class="fa fa-facebook-square"></i></li>
+	<li><i class="fa fa-facebook-square"></i></li>
+	<li><i class="fa fa-facebook-square">hfekwhgksdnajj</i></li>
+	<li><i class="fa fa-facebook-square"></i></li>
+</ul>
+</div>
+</div>
  <script src="<?php echo base_url('/assets/js/main.js');?>"></script>
 </body>
 </html>

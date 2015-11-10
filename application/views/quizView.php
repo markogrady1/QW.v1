@@ -12,7 +12,8 @@
 	<header class="header-quiz">
 	<span class="logo-wrap">Grady's Quiz Nite</span>  
 </header>
-
+<div class="page-wrap">
+<div class="feedback"></div>	
 <?php
 $score = isset($score) ? $score : 0;
 
@@ -31,7 +32,7 @@ if($correctAnswer) {
 
 if(isset($correctAnswer)) {
 		$score++; ?>
-		
+	
 <div class="details-overlay"><div class="answer-status" style="color:<?php echo $color?>;"><?php echo $ansState ?></div><div class="prod-close"></div><img class="result-status" src="<?php echo base_url('/assets/img/' . $image);?>"></div>
 <div class="details-underlay" ></div>
 
@@ -56,11 +57,12 @@ shuffle($newArray);
 	<?php echo $quesdata[$quesNo]['question'] . "<br>"; ?>
 	</div>
  <form action="next" method="POST">
- 	<button class='answer-btn1' name='selected' value='<?php  echo $newArray[0] ?>'><?php echo $newArray[0] ?></button>
- 	<button class='answer-btn2' name='selected' value='<?php  echo $newArray[1] ?>'><?php echo $newArray[1] ?></button>
- 	<button class='answer-btn3' name='selected' value='<?php  echo $newArray[2] ?>'><?php echo $newArray[2] ?></button>
- 	<button class='answer-btn4' name='selected' value='<?php  echo $newArray[3] ?>'><?php echo $newArray[3] ?></button>
-
+ 	<div class="btn-wrap">
+	 	<button class='answer-btn1' name='selected' value='<?php  echo $newArray[0] ?>'><?php echo $newArray[0] ?></button>
+	 	<button class='answer-btn2' name='selected' value='<?php  echo $newArray[1] ?>'><?php echo $newArray[1] ?></button>
+	 	<button class='answer-btn3' name='selected' value='<?php  echo $newArray[2] ?>'><?php echo $newArray[2] ?></button>
+	 	<button class='answer-btn4' name='selected' value='<?php  echo $newArray[3] ?>'><?php echo $newArray[3] ?></button>
+	</div>
 
  	<?php   $quesNo++; ?>
  	<input hidden name='id' value='<?php  echo $id  ?>'>
@@ -71,6 +73,11 @@ shuffle($newArray);
  	<input hidden name='score' value='<?php echo $score ?>'>
 
  </form>
+</div>
+</div>
+<div class="footer">
+	<div class="copy">
+	<div class="copy-right">© QuizNite.com 2015. All rights reserved.</div><div class="made-by">Made with love by <a href="#">@mark_o_grady</a></div></div><div class="socials">s</div>
 </div>
 </body>
 </html>
