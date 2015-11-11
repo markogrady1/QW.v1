@@ -60,7 +60,9 @@ $answerId = $ansdata[0]['answer_id'];
 $newArray = array($ansdata[0]['crtanswer'], $ansdata[0]['ianswer1'], $ansdata[0]['ianswer2'], $ansdata[0]['ianswer3']);
 shuffle($newArray);
  ?>
-    <div class="feedback"><?php echo ++$number. "/" . sizeof($quesdata) ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Score: <?php echo $score ?></span></div>
+    <div class="feedback"><?php echo ++$number. "/" . sizeof($quesdata) ?>
+
+        <span class="score">Score: <?php echo $score ?></span></div>
 
 <div class="form-wrap">
 	<div class="question-wrap">

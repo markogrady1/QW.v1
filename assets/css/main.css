@@ -245,7 +245,7 @@ img.result-status {
 }
 
 .feedback {
-	width:60%;
+	width:40%;
 	height: 80px;
 	background-color: #323232;
 	margin: 10px auto 10px auto;
@@ -258,8 +258,13 @@ img.result-status {
     font-family: 'Source Sans Pro',sans-serif;
     padding: 20px 0 0 0;
     text-align: center;
+    box-shadow: #878787 0px 2px 2px;
+    padding-left: 50px;
 }
 
+.score {
+    padding: 0 0 0 160px;
+}
 .footer {
 	height: 80px;
 	width: 100%;
