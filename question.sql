@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 11, 2015 at 02:38 AM
+-- Generation Time: Nov 11, 2015 at 10:04 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `question` (
 `question_id` int(10) NOT NULL,
   `question` varchar(255) NOT NULL,
   `category` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `question`
@@ -56,10 +56,17 @@ INSERT INTO `question` (`question_id`, `question`, `category`) VALUES
 (17, 'Who was the first man into space?', 'space'),
 (18, 'Who starred in the 1983 movie Scarface?', 'movie'),
 (19, 'Which actor starred as Muhammed Ali in the movie "Ali"?', 'movie'),
-(20, 'Joe Pesci is best known for his roles as a?', 'movie'),
 (21, 'Who starred as the original Batman?', 'movie'),
 (22, 'What is the name of character who is Iron Man?', 'movie'),
-(23, 'Game of Thrones has how many thrones?', 'movie');
+(23, 'Game of Thrones has how many thrones?', 'movie'),
+(24, 'How many times have London hosted the Olympics?', 'sport'),
+(25, 'Which colour is not an Olympic ring colour?', 'sport'),
+(26, 'What is the name of Leeds United home ground?', 'sport'),
+(27, 'Which London side did Ruud Gullit join in 1995?', 'sport'),
+(28, 'How many Earths fit would fit in the Sun?', 'space'),
+(29, 'How old is the Sun', 'space'),
+(30, 'How old is the Universe?', 'space'),
+(31, 'In 1979 which NASA mission flew by Saturn?', 'space');
 
 --
 -- Indexes for dumped tables
@@ -79,7 +86,7 @@ ALTER TABLE `question`
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
-MODIFY `question_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
+MODIFY `question_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 11, 2015 at 02:38 AM
+-- Generation Time: Nov 11, 2015 at 10:04 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `answer` (
   `ianswer1` varchar(255) NOT NULL,
   `ianswer2` varchar(255) NOT NULL,
   `ianswer3` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `answer`
@@ -59,10 +59,17 @@ INSERT INTO `answer` (`answer_id`, `question_id`, `crtanswer`, `ianswer1`, `ians
 (17, 17, 'Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'Buzz Lightyear'),
 (18, 18, 'Al Pacino', 'Joe Pesci', 'Robert Loggia', 'Angel Salazar'),
 (19, 19, 'Will Smith', 'Jamie Foxx', 'Ice Cube', 'Ice T'),
-(20, 20, 'Gangster', 'Sports Hero', 'Action hero', 'Romantic man'),
 (21, 21, 'Adam West ', 'Adam North', 'Tony West', 'Tony North'),
 (22, 22, 'Tony Stark', 'Robert Downey Jr', 'Clark Kent', 'Bruce Wayne'),
-(23, 23, '7', '8', '6', '9');
+(23, 23, '7', '8', '6', '9'),
+(24, 24, '3', '4', '2', '1'),
+(25, 25, 'Orange', 'Red', 'Yellow', 'Green'),
+(26, 26, 'Elland Road', 'Stamford Bridge', 'Goodison Park', 'Loftus Road'),
+(27, 27, 'Chelsea', 'Tottenham', 'Arsenal', 'Wimbledon'),
+(28, 28, '1 Million', '500,000', '2 Million', '100,000'),
+(29, 29, '4.5 billion years', '4 billion years', '3.5 billion years', '2 billions years'),
+(30, 30, '13.8 billion years', '10 billion years', '5 billion years', '20 billion years'),
+(31, 31, 'Pioneer 11', 'Voyager 1', 'New Horizon', 'Apollo 3');
 
 --
 -- Indexes for dumped tables
@@ -82,7 +89,7 @@ ALTER TABLE `answer`
 -- AUTO_INCREMENT for table `answer`
 --
 ALTER TABLE `answer`
-MODIFY `answer_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
+MODIFY `answer_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- Constraints for dumped tables
 --

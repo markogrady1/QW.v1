@@ -362,6 +362,26 @@ img.result-status {
     /*padding: 100px 0 100px 0;*/
 }
 
+.home-link {
+    font-size: 1.3em;
+    width:100px;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    padding: 0 0 0 30px;
+    margin: 30px 0 0 0;
+    color: #aaa;
+}
+
+.home-link:hover {
+    color:#2678A7;
+}
+
+.left-carrot {
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    /*-webkit-text-stroke-color: #777;*/
+}
 @media only screen and (max-width: 1287px) {
     img.result-status {
         position: absolute;
@@ -382,6 +402,10 @@ img.result-status {
     }
 }
 
+
+button {
+    outline: none;
+}
 
 
 

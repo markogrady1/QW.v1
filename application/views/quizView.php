@@ -7,11 +7,12 @@
     <script src='<?php echo base_url('/assets/js/main.js');?>'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body class="site">
+<body class="site"><a class="home-link" href="<?php echo base_url('/');?>"><i class="fa fa-home"></i></a>
 <header class="header-quiz">
     <span class="logo-wrap">Grady's Quiz Nite</span>
 </header>
 <div class="page-wrap">
+
     <?php
     $score = isset($score) ? $score : 0;
     $correctAnswer = isset($isCorrectAnswer) ? $isCorrectAnswer : null;

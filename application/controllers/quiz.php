@@ -2,7 +2,12 @@
 
 class Quiz extends CI_Controller {
 
-
+    /**
+     * This function is called for the first round of questions
+     * for a given quiz
+     *
+     * @return void
+     */
 	public function start() {
 		$category = isset($_GET['cat']) ? $_GET['cat'] : null;
 
@@ -24,11 +29,15 @@ class Quiz extends CI_Controller {
 				'score' 		  => null,
 				'finish' 		  => false
 			));
-
 	}
 
+    /**
+     * This function is called for all questions apart from the initial one.
+     * It resolves the quiz data from the model and loads it into the view.
+     *
+     * @return void
+     */
 	public function next() {
-
 		
 		$this->load->model('questionModel');
 
@@ -68,12 +77,21 @@ class Quiz extends CI_Controller {
                     'score' 		  => $score,
                     'finish' 		  => true
                 ));
-//			redirect('home');
 		}
 	}
 
+    /**
+     * This function checks the user input against the correct answer.
+     *
+     * @param int $qNo
+     * @param array $data
+     * @param string $cat
+     * @return bool $correctAnswer
+     */
 	public function checkAnswer($qNo, $data, $cat) {
+
 		$givenAnswer = isset($_POST['selected']) ? $_POST['selected'] : null;
+
 		$id = $data[--$qNo]['question_id'];
 
 		$ansData = $this->questionModel->getAnswers($cat, $id);
@@ -81,10 +99,5 @@ class Quiz extends CI_Controller {
 		$correctAnswer = $givenAnswer === $ansData[0]['crtanswer'] ? true : false;
 
 		return $correctAnswer;
-
 	}
 }
-
-
-
- ?>
