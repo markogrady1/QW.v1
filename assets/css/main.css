@@ -97,7 +97,7 @@ span.logo-wrap-quiz {
 
 .details-underlay {
 	width: 100%;
-	height: 104%;
+	height: 110%;
 	background-color: #000;
 	position: absolute;
 	margin-top:-200px;
@@ -135,25 +135,29 @@ img.result-status {
 }
 
 @media only screen and (min-width: 1287px) {
-   .answer-btn4, .answer-btn2 {
+    .answer-btn4, .answer-btn2 {
 	float:right;
 	margin-right:10%;
-}
+    }
 
-.answer-btn1, .answer-btn3 {
+    .answer-btn1, .answer-btn3 {
 	float: left;
 	margin-left:10%;
-}
+    }
 
-.answer-btn4, .answer-btn2 {
+    .answer-btn4, .answer-btn2 {
 	float:right;
 	margin-right:10%;
-}
+    }
 
-.answer-btn1, .answer-btn3 {
+    .answer-btn1, .answer-btn3 {
 	float: left;
 	margin-left:10%;
-}
+    }
+
+    .score {
+        padding: 0 0 0 160px;
+    }
 }
 
 @media only screen and (max-width: 1287px) {
@@ -194,10 +198,12 @@ img.result-status {
 	top: 150px;
 	right: 100px;
 }
-
+.score {
+    padding: 0 0 0 100px
+}
 }
 
-.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4 {
+.answer-btn1, .answer-btn2, .answer-btn3, .answer-btn4, .home-btn{
 	font-family:arial, helvetica, sans-serif; 
 	font-size: 1.4em;
 	height: 50px;
@@ -213,7 +219,7 @@ img.result-status {
 }
 
 
-.answer-btn1:hover, .answer-btn2:hover, .answer-btn3:hover, .answer-btn4:hover {
+.answer-btn1:hover, .answer-btn2:hover, .answer-btn3:hover, .answer-btn4:hover, .home-btn:hover {
 
 	background-color: #3093C7; background-image: -webkit-gradient(linear, left top, left bottom, from(#1C5A85), to(#3093C7));
  background-image: -webkit-linear-gradient(top,#1C5A85 , #3093C7);
@@ -224,6 +230,10 @@ img.result-status {
  box-shadow: #878787 0px 2px 2px
 }
 
+.home-btn {
+    font-size: 1em;
+    margin-top: 100px;
+}
 .btn-wrap {
 	width: inherit; 
 	height: 10px;
@@ -262,9 +272,6 @@ img.result-status {
     padding-left: 50px;
 }
 
-.score {
-    padding: 0 0 0 160px;
-}
 .footer {
 	height: 80px;
 	width: 100%;
@@ -350,6 +357,30 @@ img.result-status {
     flex: 1;
 }
 
+.total-feedback {
+    /*padding: 0;*/
+    /*padding: 100px 0 100px 0;*/
+}
+
+@media only screen and (max-width: 1287px) {
+    img.result-status {
+        position: absolute;
+        width:150px;
+        height:150px;
+        top: 100px;
+        right: 100px;
+    }
+
+    .answer-status {
+        font-size: 8em;
+        position: absolute;
+        top: 100;
+        right: 300;
+        font-family: 'Courgette', cursive;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #777;
+    }
+}
 
 
 

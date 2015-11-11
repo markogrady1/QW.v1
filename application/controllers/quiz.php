@@ -17,11 +17,12 @@ class Quiz extends CI_Controller {
 		$this->load->view('quizView', 
 			array(
 				'quesdata' 		  => $quesData,
-				'ansdata' 		  => $ansData,
 				'idvalue' 		  => $idVal,
+				'ansdata' 		  => $ansData,
 				'quesNo' 		  => null,
 				'isCorrectAnswer' => null,
-				'score' 		  => null
+				'score' 		  => null,
+				'finish' 		  => false
 			));
 
 	}
@@ -49,15 +50,25 @@ class Quiz extends CI_Controller {
 				array(
 					'quesdata' 		  => $quesData,
 					'ansdata' 		  => $ansData,
-					'idvalue' 		  => $id, 
+					'idvalue' 		  => $id,
 					'quesNo'          => $qNo, 
 					'isCorrectAnswer' => $isCorrect,
-					'score' 		  => $score	
+					'score' 		  => $score,
+					'finish' 		  => false,
 					));
 		
 		} else {
-
-			redirect('home');
+            $this->load->view('quizView',
+                array(
+                    'quesdata' 		  => $quesData,
+                    'ansdata' 		  => 0,
+                    'idvalue' 		  => 0,
+                    'quesNo'          => --$qNo,
+                    'isCorrectAnswer' => $isCorrect,
+                    'score' 		  => $score,
+                    'finish' 		  => true
+                ));
+//			redirect('home');
 		}
 	}
 
