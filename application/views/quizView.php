@@ -14,12 +14,19 @@
 	<span class="logo-wrap">Grady's Quiz Nite</span>  
 </header>
 <div class="page-wrap">
-<div class="feedback"></div>	
+
+
 <?php
 $score = isset($score) ? $score : 0;
 
 
 $correctAnswer = isset($isCorrectAnswer) ? $isCorrectAnswer : null;
+$number = $quesNo;
+
+?>
+
+
+<?php
 
 if($correctAnswer) {
 	$ansState = "Correct";
@@ -32,9 +39,10 @@ if($correctAnswer) {
 }
 
 if(isset($correctAnswer)) {
+    if($correctAnswer)
 		$score++; ?>
-	
-<div class="details-overlay"><div class="answer-status" style="color:<?php echo $color?>;"><?php echo $ansState ?></div><div class="prod-close"></div><img class="result-status" src="<?php echo base_url('/assets/img/' . $image);?>"></div>
+
+    <div class="details-overlay"><div class="answer-status" style="color:<?php echo $color?>;"><?php echo $ansState ?></div><div class="prod-close"></div><img class="result-status" src="<?php echo base_url('/assets/img/' . $image);?>"></div>
 <div class="details-underlay" ></div>
 
 <script type="text/javascript">
@@ -52,6 +60,7 @@ $answerId = $ansdata[0]['answer_id'];
 $newArray = array($ansdata[0]['crtanswer'], $ansdata[0]['ianswer1'], $ansdata[0]['ianswer2'], $ansdata[0]['ianswer3']);
 shuffle($newArray);
  ?>
+    <div class="feedback"><?php echo ++$number. "/" . sizeof($quesdata) ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Score: <?php echo $score ?></span></div>
 
 <div class="form-wrap">
 	<div class="question-wrap">
