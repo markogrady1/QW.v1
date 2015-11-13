@@ -3,8 +3,11 @@
 class Quiz extends CI_Controller {
 
     /**
-     * This function is called for the first round of questions
-     * for a given quiz
+     * This function is called for the first question
+     * for a given quiz.
+     * This function is important because we only use one quiz view
+     * so the first answer does not need to compare answers
+     * and it will not need to worry about obtaining user inputs
      *
      * @return void
      */
@@ -18,7 +21,7 @@ class Quiz extends CI_Controller {
 		$idVal = $quesData[0]['question_id'];
 
 		$ansData = $this->questionModel->getAnswers($category, $idVal);
-		
+		//some values are not needed for first question, so they are null
 		$this->load->view('quizView', 
 			array(
 				'quesdata' 		  => $quesData,
@@ -34,6 +37,7 @@ class Quiz extends CI_Controller {
     /**
      * This function is called for all questions apart from the initial one.
      * It resolves the quiz data from the model and loads it into the view.
+     * it also loads the result of an incorrect/correct answer
      *
      * @return void
      */
@@ -47,9 +51,11 @@ class Quiz extends CI_Controller {
 		$limit = isset($_POST['limit']) ? $_POST['limit'] : null;
 
 		$quesData = $this->questionModel->getQuestions($category);
-		$isCorrect = $this->checkAnswer($qNo, $quesData, $category);
+		$isCorrect = $this->checkAnswer($qNo, $quesData, $category); //check whether user input is correct. Boolean is returned.
 		$score = $isCorrect ? $score++ : $score;
-		if($limit != $qNo) {
+
+
+		if($limit != $qNo) {  //  if this is not last question load all neccessary data into the view.
 
 			$id = $quesData[$qNo]['question_id'];
 
@@ -66,7 +72,7 @@ class Quiz extends CI_Controller {
 					'finish' 		  => false,
 					));
 		
-		} else {
+		} else {  //  else only provide the data concerning whether an answer was correct/incorrect
             $this->load->view('quizView',
                 array(
                     'quesdata' 		  => $quesData,

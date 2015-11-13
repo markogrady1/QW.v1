@@ -14,10 +14,13 @@
 <div class="page-wrap">
 
     <?php
+    //check whether score or correctAnswer variables have been set
+    // if they are not, then it is the first question being displayed.
     $score = isset($score) ? $score : 0;
     $correctAnswer = isset($isCorrectAnswer) ? $isCorrectAnswer : null;
     $number = $quesNo;
 
+    //change the state of feedback according to correctanswer being true or false
     if($correctAnswer) {
         $ansState = "Correct";
         $color = "#33b679";
@@ -28,7 +31,7 @@
         $image = "red_x1.png";
     }
 
-    if(isset($correctAnswer)) {
+    if(isset($correctAnswer)) { //if it is not the first question then add a result display
         if($correctAnswer)
             $score++;
         ?>
@@ -42,20 +45,22 @@
             popUp();
         </script>
     <?php }
+    //get all values needed to check answer and to keep theme going
     $quesNo = !isset($quesNo) ? 0 : $quesNo;
     $limit = sizeof($quesdata);
     $cat = $quesdata[$quesNo]['category'];
     $id = $quesdata[$quesNo]['question_id'];
     $answerId = $ansdata[0]['answer_id'];
     $newArray = array($ansdata[0]['crtanswer'], $ansdata[0]['ianswer1'], $ansdata[0]['ianswer2'], $ansdata[0]['ianswer3']);
-    shuffle($newArray);
+    shuffle($newArray); //randomise
     ?>
     <div class="feedback"><?php echo ++$number. "/" . sizeof($quesdata) ?>
         <span class="score">Score: <?php echo $score ?></span>
     </div>
     <div class="form-wrap">
         <div class="question-wrap">
-            <?php if(!$finish) { ?>
+
+            <?php if(!$finish) { // if last question, hide buttons and simply display final feedback. ?>
             <?php echo $quesdata[$quesNo]['question'] . "<br>"; ?>
         </div>
         <form action="next" method="POST">
@@ -72,6 +77,7 @@
                 <div class="total-feedback"><?php echo $out ?></div>
             <?php } ?>
             <?php   $quesNo++; ?>
+            <!--   data to be passed back and forth via hidden fields -->
             <input hidden name='id' value='<?php  echo $id  ?>'>
             <input hidden name='quesNo'  value='<?php  echo $quesNo ?>'>
             <input hidden name='limit' value='<?php echo $limit ?>'>

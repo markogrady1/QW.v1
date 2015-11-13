@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 class QuestionModel extends CI_Model {
 
 	public function __construct() {
@@ -7,13 +6,13 @@ class QuestionModel extends CI_Model {
 	}
 
 	/**
-	 * This function returns an object of questions
+	 * This function returns an array of questions
+     * from the database
      *
 	 * @param  string $category 
-	 * @return Object $result
+	 * @return array $result
 	 */
 	public function getQuestions($category) {
-		
 		$this->db->select('*');
 		$this->db->from('question');
 		$this->db->where('category', $category); 
@@ -25,10 +24,11 @@ class QuestionModel extends CI_Model {
 
     /**
      * This function resolves all answers for a given question
+     * from the database
      *
-     * @param $category
-     * @param $id
-     * @return mixed
+     * @param string $category
+     * @param int $id
+     * @return array $result
      */
 	public function getAnswers($category, $id) {
 		$query = $this->db->get_where('answer', array('question_id' => $id), 1, 0);
