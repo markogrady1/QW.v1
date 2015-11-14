@@ -93,9 +93,7 @@
         <?php  } ?>
     </div>
 </div>
-<div class="footer">
-    <div class="copy">
-        <div class="copy-right">© QuizNite.com 2015. All rights reserved.</div>
+<div class="footer"><div class="copy"><div class="copy-right">&copy; QuizNite.com 2015. All rights reserved.</div>
         <div class="made-by">Made with love by <a href="https://twitter.com/?lang=en-gb" target="_blank">@mark_o_grady</a>
         </div>
     </div>

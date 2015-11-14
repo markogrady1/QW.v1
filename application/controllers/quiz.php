@@ -5,9 +5,8 @@ class Quiz extends CI_Controller {
     /**
      * This function is called for the first question
      * for a given quiz.
-     * This function is important because we only use one quiz view
-     * so the first answer does not need to compare answers
-     * and it will not need to worry about obtaining user inputs
+     * It is used only for the first question because the values passed
+     * are different from the following questions
      *
      * @return void
      */

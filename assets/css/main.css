@@ -18,6 +18,19 @@ a:hover {
 	text-decoration: underline;
 }
 
+.score {
+    padding: 0 0 0 50px;
+}
+
+.copy-right {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 15px;
+    width: 400px;
+    color: #E2E1E7;
+    padding: 15px 0 0 40px;
+    float: left;
+}
+
 .header-quiz {
 	padding: 5px 0 0 50px;
 	height: 47px;
@@ -156,9 +169,10 @@ img.result-status {
     }
 
     .score {
-        padding: 0 0 0 160px;
+        padding: 0 0 0 50px;
     }
 }
+
 
 @media only screen and (max-width: 1287px) {
    .answer-btn4, .answer-btn2 {
@@ -199,7 +213,7 @@ img.result-status {
 	right: 100px;
 }
 .score {
-    padding: 0 0 0 100px
+    padding: 0 0 0 50px
 }
 }
 
@@ -269,7 +283,7 @@ img.result-status {
     padding: 20px 0 0 0;
     text-align: center;
     box-shadow: #878787 0px 2px 2px;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 .footer {
@@ -278,14 +292,7 @@ img.result-status {
 	background-color: #272822;
 }
 
-.copy-right {
-	font-family: 'Source Sans Pro',sans-serif;
-	font-size: 15px;
-	width: 300px;
-	color: #E2E1E7;
-	padding: 15px 0 0 40px;
-    float: left;
-}
+
 
 .made-by {
     clear: both;
